@@ -2,3 +2,12 @@
 @plugin "daisyui" {
   themes: retro, coffee;
 }
+
+@font-face {
+  font-family: MonserratAlternate;
+  src: url("../public/font/montserrat-alternate/MontserratAlternates-SemiBold.ttf");
+}
+
+@theme {
+  --font-monserratAlternate: "MonserratAlternate";
+}

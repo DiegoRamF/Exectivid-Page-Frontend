@@ -1,7 +1,8 @@
 import { Component, computed, inject } from '@angular/core';
-import { AlbumService } from '../../services/exectivid.service';
+import { AlbumesService } from '../../services/album.service';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { tap } from 'rxjs';
 
 @Component({
   selector: 'app-exectivid-page',
@@ -9,10 +10,13 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   templateUrl: './exectivid-page.html',
 })
 export default class ExectividPage {
-  private albumService = inject(AlbumService);
+  private albumesService = inject(AlbumesService);
 
   albumesResource = rxResource({
-    stream: () => this.albumService.getAlbumes()
+    stream: () => this.albumesService.getAlbumes()
+      // .pipe(
+      //   tap(console.log)
+      // )
   });
 
   albumes = computed(() => this.albumesResource.value());

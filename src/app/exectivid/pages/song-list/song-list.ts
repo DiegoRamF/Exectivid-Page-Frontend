@@ -1,8 +1,8 @@
-import { Component, computed, inject, signal } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { rxResource, toSignal } from '@angular/core/rxjs-interop';
-import { map, tap } from 'rxjs';
+import { map, of, tap } from 'rxjs';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { AlbumService } from '@services/exectivid.service';
+import { AlbumesService } from '@services/album.service';
 import { SongsService } from '@services/songs.service';
 
 @Component({
@@ -11,34 +11,46 @@ import { SongsService } from '@services/songs.service';
   templateUrl: './song-list.html',
 })
 export default class SongList {
-  albumService = inject(AlbumService);
+  albumesService = inject(AlbumesService);
   songsService = inject(SongsService);
   route = inject(ActivatedRoute);
 
   albumSlug = toSignal<string>(
     this.route.params
-    .pipe(
-      map(params => params['slug']),
-    ),
+      .pipe(
+        map(params => params['albumSlug']),
+        // tap(console.log)
+      ),
   );
 
-  songId = toSignal<number>(
-    this.route.params
-      .pipe(
-        map(params => Number(params['id']))
-      )
-  )
+  albumId = computed<number | undefined>(() => {
+    const album = this.albumResource.value();
+
+    if ( !album ) return undefined;
+
+    return album.id
+  });
 
   albumResource = rxResource({
     params: () => ({slug: this.albumSlug()}),
-    stream: ({params}) => this.albumService.getAlbumBySlug(params.slug).pipe(tap(console.log)),
+    stream: ({params}) => this.albumesService.getAlbumBySlug(params.slug)
+      // .pipe(
+      //   tap(console.log)
+      // ),
   });
 
-  songResource = rxResource({
-    params: () => ({id: this.songId()}),
-    stream: ({params}) => this.songsService.getSongsById(params.id).pipe(tap(console.log))
+  songsResource = rxResource({
+    params: () => ({id: this.albumId()}),
+    stream: ({params}) => {
+      if ( params.id === undefined) return of(undefined)
+
+      return this.songsService.getSongs(params.id)
+        // .pipe(
+        //   tap(console.log)
+        // )
+    }
   })
 
   albumInfo = computed(() => this.albumResource.value())
-
+  songInfo = computed(() => this.songsResource.value())
 };

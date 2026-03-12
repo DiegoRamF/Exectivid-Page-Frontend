@@ -1,12 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Album } from '@interfaces/album-interface';
-import { map, Observable } from 'rxjs';
+import { map, Observable, tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AlbumService {
+export class AlbumesService {
 
   private http = inject(HttpClient);
 
@@ -17,8 +17,8 @@ export class AlbumService {
   getAlbumBySlug(slug: string | undefined): Observable<Album | undefined> {
     return this.http.get<Album[]>('data/albumes.json')
       .pipe(
-        map(albumes => albumes.find(album => album.slug === slug))
+        map(albumes => albumes.find(album => album.slug === slug)),
+        // tap(console.log),
       );
   };
-
 }

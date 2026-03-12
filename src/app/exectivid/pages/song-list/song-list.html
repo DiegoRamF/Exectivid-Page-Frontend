@@ -12,15 +12,15 @@
 
     <div class="text-center md:text-left flex-1">
 
-      <p class="text-xs md:text-sm font-bold uppercase tracking-widest mb-1 md:mb-2">
+      <p class="text-xs font-monserratAlternate md:text-sm font-bold uppercase tracking-widest mb-1 md:mb-2">
         {{ albumInfo()?.type }} • {{ albumInfo()?.year }}
       </p>
 
-      <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-base-content tracking-tight mb-2 md:mb-4">
+      <h1 class="text-3xl font-monserratAlternate md:text-5xl lg:text-6xl font-extrabold text-base-content tracking-tight mb-2 md:mb-4">
         {{ albumInfo()?.name }}
       </h1>
 
-      <h2 class="text-lg md:text-xl font-semibold text-base-content/60">
+      <h2 class="text-lg font-monserratAlternate md:text-xl font-semibold text-base-content/60">
         Lista de canciones
       </h2>
 
@@ -29,13 +29,13 @@
   </div>
 
   <ul class="flex flex-col gap-3">
-    @for (song of albumInfo()?.songs; track $index) {
-      <li class="flex items-center p-4 bg-base-100 border border-base-300 rounded-xl shadow-sm hover:shadow-md hover:border-primary transition-all duration-300 group">
+    @for ( song of songInfo(); track song.id ) {
+      <li class="flex items-center p-4 bg-base-100 border border-base-300 rounded-xl shadow-sm hover:shadow-md hover:border-base transition-all duration-300 group">
         <a
-          [routerLink]="[]"
+          [routerLink]="[song.slug]"
         >
-          <span class="text-lg font-medium text-base-content group-hover:text-primary transition-colors">
-            {{ $index + 1 }} • {{ song }}
+          <span class="text-lg font-medium text-base-content group-hover:text-base transition-colors">
+            {{ song.id }} • {{ song.name }}
           </span>
         </a>
       </li>

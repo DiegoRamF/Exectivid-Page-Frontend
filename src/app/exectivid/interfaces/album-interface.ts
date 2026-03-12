@@ -3,7 +3,6 @@ export interface Album {
   type: string;
   year: number;
   name: string;
-  songs: string[];
   image: string;
   slug: string;
 };

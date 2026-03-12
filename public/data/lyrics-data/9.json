@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "name": "prueba 1",
+    "slug": "prueba-1",
+    "lyrics": [
+      "Esto es para probar si funciona agregar cualquier cosa",
+      " ",
+      "Segunda linea"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "XD",
+    "slug": "xd",
+    "lyrics": [
+      "/"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "189.wav",
+    "slug": "189",
+    "lyrics": [
+      "189.wav"
+    ]
+  }
+]

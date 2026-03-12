@@ -2,11 +2,11 @@ import { Routes } from '@angular/router';
 
 export const albumRoute: Routes = [
   {
-    path: 'album/:slug',
+    path: 'album/:albumSlug',
     loadComponent: () => import('./song-list/song-list'),
   },
   {
-    path: 'album/:slug:/:songSlug',
+    path: 'album/:albumSlug/:songSlug',
     loadComponent: () => import('./song-list/lyrics-of-song/lyrics-of-song'),
   }
 ]

@@ -4,24 +4,6 @@
     "type": "Álbum",
     "year": 2023,
     "name": "Memorias",
-    "songs": [
-      "Febrero (interludio)",
-      "Nubes color naranja",
-      "Güeparda",
-      "Marte",
-      "Puedes confiar en mí",
-      "Ojos viejos",
-      "Estoy aquí (interludio)",
-      "Tu mirar",
-      "Mimo",
-      "No puedo vivir en mí",
-      "Agosto (interludio)",
-      "Somos polvo de estrellas",
-      "Medallón palmera",
-      "Camino Sin Final",
-      "Burbuja (interludio)",
-      "Memorias"
-    ],
     "image": "./img/1.jpg",
     "slug": "memorias"
   },
@@ -30,9 +12,6 @@
     "type": "Sencillo",
     "year": 2023,
     "name": "Estrella fugaz",
-    "songs": [
-      "Estrella fugaz"
-    ],
     "image": "./img/2.jpg",
     "slug": "estrella-fugaz"
   },
@@ -41,9 +20,6 @@
     "type": "Sencillo",
     "year": 2023,
     "name": "Me conformo con que me puedas escuchar",
-    "songs": [
-      "Me conformo con que me puedas escuchar"
-    ],
     "image": "./img/3.jpg",
     "slug": "me-conformo-con-que-me-puedas-escuchar"
   },
@@ -52,17 +28,6 @@
     "type": "Álbum",
     "year": 2024,
     "name": "memos demos",
-    "songs": [
-      "2021 2022",
-      "nube color naranja (versión alternativa)",
-      "ojos viejos v1 (Demo)",
-      "[no] estoy bien",
-      "interdemo_2",
-      "estoy aquí versión alternativa (demo)",
-      "Somos polvo de estrellas (demo)",
-      "Camino Sin Final (demo)",
-      "memorias (Demo)"
-    ],
     "image": "./img/4.jpg",
     "slug": "memos-demos"
   },
@@ -71,15 +36,6 @@
     "type": "Álbum",
     "year": 2024,
     "name": "todo estará bien",
-    "songs": [
-      "el pasado me hace daño",
-      "hacia atrás",
-      "puedo seguir",
-      "pensar de más me va a matar",
-      "si por tí fuera",
-      "no abandones tu ser",
-      "tururu"
-    ],
     "image": "./img/5.jpg",
     "slug": "todo-estara-bien"
   },
@@ -88,9 +44,6 @@
     "type": "Sencillo",
     "year": 2024,
     "name": "no somos eternos",
-    "songs": [
-      "no somos eternos"
-    ],
     "image": "./img/6.jpg",
     "slug": "no-somos-eternos"
   },
@@ -99,9 +52,6 @@
     "type": "Sencillo",
     "year": 2024,
     "name": "14.11.24 psycho.wav",
-    "songs": [
-      "14.11.24 psycho.wav"
-    ],
     "image": "./img/7.jpg",
     "slug": "pyscho-wav"
   },
@@ -109,17 +59,7 @@
     "id": 8,
     "type": "Álbum",
     "year": 2025,
-    "name": "Casi olvidas que eres el sol ;)",
-    "songs": [
-      "mantente vivo (intro)",
-      "cada día de mi vida",
-      "avión (interludio)",
-      "siempre estarás aquí",
-      "martes muy nublado",
-      "quiero vivir por siempre",
-      "mensaje antes de partir",
-      "casi olvidas que eres el sol (epílogo)"
-    ],
+    "name": "casi olvidas que eres el sol ;)",
     "image": "./img/8.jpg",
     "slug": "casi-olvidas-que-eres-el-sol"
   },
