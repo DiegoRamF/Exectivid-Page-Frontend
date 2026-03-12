@@ -1,59 +1,37 @@
-# Exectivid
+# Exectivid Page
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.2.
+Una plataforma web dedicada a recopilar la discografía de **Exectivid**, artista independiente de Huancayo, Perú. Este proyecto nace de la admiración por su música y como un ejercicio práctico de desarrollo frontend moderno.
 
-## Development server
+## Sobre Exectivid
+Exectivid es un proyecto musical con raíces en Huancayo. Su estilo evoca la melancolía y sencillez de artistas como Ed Maverick, pero con un matiz mucho más **íntimo, personal y crudo**. A pesar de ser un artista emergente, su música conecta profundamente con quienes buscan sonidos auténticos y letras que se sienten como una confesión en privado.
 
-To start a local development server, run:
+## El Proyecto
+La aplicación funciona como un archivo digital donde se organiza su contenido musical:
+* **Navegación por Álbumes:** Visualización clara de la discografía.
+* **Tracklists Detallados:** Al seleccionar un álbum, se despliegan todas las canciones que lo componen.
+* **Interfaz Minimalista:** Diseño enfocado en la experiencia del usuario, manteniendo la estética visual que representa el sonido del artista.
 
-```bash
-ng serve
-```
+## Tecnologías Utilizadas
+Este proyecto fue construido utilizando herramientas de última generación para garantizar un rendimiento óptimo y un diseño estilizado:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* **[Angular 21](https://angular.dev/):** El framework principal para la lógica y estructura de la aplicación.
+* **[Tailwind CSS](https://tailwindcss.com/):** Para un estilizado rápido y responsivo.
+* **[DaisyUI](https://daisyui.com/):** Componentes basados en Tailwind para lograr esa estética limpia y temática.
 
-## Code scaffolding
+## Instalación y Desarrollo
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Si deseas ejecutar este proyecto localmente:
 
-```bash
-ng generate component component-name
-```
+1. Clona el repositorio:
+   ```bash
+   git clone [https://github.com/DiegoRamF/Exectivid-Page.git](https://github.com/DiegoRamF/Exectivid-Page.git)
+2. Instala las dependencias:
+   ```
+   npm install
+4. Inicia el servidor de desarrollo:
+    ```
+   ng serve
+    ```
+6. Abre tu navegador en http://localhost:4200/.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Hecho con pasión por un fan para la comunidad de Exectivid.
