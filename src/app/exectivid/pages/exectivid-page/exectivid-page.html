@@ -4,7 +4,12 @@
 
     <div class="p-6 pb-2">
       <a routerLink="/welcome" class="group flex items-center gap-2 transition-all">
-        <span class="text-4xl font-monserratAlternate font-black tracking-tighter text-base-content">Exectivid</span>
+        <span
+          class="text-4xl font-monserratAlternate font-black tracking-tighter text-base-content"
+          style="view-transition-name: exectivid"
+        >
+          Exectivid
+        </span>
       </a>
     </div>
 
@@ -16,14 +21,89 @@
       @for (album of albumes(); track album.id) {
         <a
           [routerLink]="['album', album.slug]"
-          routerLinkActive="bg-primary/10 text-base-content border-r-4 border-base-1000"
+          routerLinkActive="bg-base/10 text-base-content border-r-4 border-base"
           class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-base-300 transition-all duration-200 text-sm font-medium group"
         >
           <span class="truncate font-monserratAlternate">{{ album.id }} • {{ album.name }}</span>
         </a>
-        <div class="divider"></div>
       }
     </nav>
+
+    <div class="p-6 border-t border-base-300 bg-base-200/50">
+      <div class="space-y-4">
+
+        <div>
+          <p class="text-[10px] font-bold uppercase tracking-widest text-base-content/40 mb-1">
+            Créditos
+          </p>
+          <p class="text-sm font-monserratAlternate text-base-content/80 leading-tight">
+            <span class="font-bold">Lewy</span>
+            <span class="text-[10px] mx-1 opacity-50 italic">para</span>
+            <span class="font-bold">Pietro Benavente</span>
+          </p>
+        </div>
+
+        <div class="space-y-2 mt-4 pt-4 border-t border-base-content/5">
+          <p class="text-[10px] font-bold uppercase tracking-widest text-base-content/40">
+            Sigue a Exectivid
+          </p>
+          <div class="flex gap-4">
+            <a href="https://www.instagram.com/exectivid/" target="_blank" class="text-base-content/60 hover:text-accent transition-all hover:scale-110">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill="currentColor"
+                  d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h14c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2M9.984 15.523a5.54 5.54 0 0 0 5.538-5.539c0-.338-.043-.664-.103-.984H17v7.216a.69.69 0 0 1-.693.69H3.693a.69.69 0 0 1-.693-.69V9h1.549c-.061.32-.104.646-.104.984a5.54 5.54 0 0 0 5.539 5.539M6.523 9.984a3.461 3.461 0 1 1 6.922 0a3.461 3.461 0 0 1-6.922 0M16.307 6h-1.615A.694.694 0 0 1 14 5.308V3.691c0-.382.31-.691.691-.691h1.615c.384 0 .694.309.694.691v1.616c0 .381-.31.693-.693.693"
+                />
+              </svg>
+            </a>
+            <a href="https://open.spotify.com/intl-es/artist/63XW3qfby7Z89YnKyive02?si=38Fo25zwTVKDuBTa0dA_Vw" target="_blank" class="text-base-content/60 hover:text-accent transition-all hover:scale-110">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill="currentColor"
+                  d="M10 1.2A8.8 8.8 0 0 0 1.2 10A8.8 8.8 0 1 0 10 1.2m3.478 13.302c-.173 0-.294-.066-.421-.143c-1.189-.721-2.662-1.099-4.258-1.099c-.814 0-1.693.097-2.61.285l-.112.028c-.116.028-.235.059-.326.059a.65.65 0 0 1-.661-.656c0-.373.21-.637.562-.703a14 14 0 0 1 3.152-.372c1.855 0 3.513.43 4.931 1.279c.243.142.396.306.396.668a.655.655 0 0 1-.653.654m.913-2.561c-.207 0-.343-.079-.463-.149c-2.143-1.271-5.333-1.693-7.961-.993l-.12.037c-.099.031-.191.062-.321.062a.786.786 0 0 1-.783-.788c0-.419.219-.712.614-.824c1.013-.278 1.964-.462 3.333-.462c2.212 0 4.357.555 6.038 1.561c.306.175.445.414.445.771a.784.784 0 0 1-.782.785m1.036-2.92c-.195 0-.315-.047-.495-.144c-1.453-.872-3.72-1.391-6.069-1.391c-1.224 0-2.336.135-3.306.397l-.098.027a1.3 1.3 0 0 1-.365.068a.914.914 0 0 1-.919-.929c0-.453.254-.799.68-.925c1.171-.346 2.519-.521 4.006-.521c2.678 0 5.226.595 6.991 1.631c.332.189.495.475.495.872a.91.91 0 0 1-.92.915"
+                />
+              </svg>
+            </a>
+            <a href="https://youtube.com/@exectivid?si=TygZzqDxbUBW2_IX" target="_blank" class="text-base-content/60 hover:text-accent transition-all hover:scale-110">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill="currentColor"
+                  d="M10 2.3C.172 2.3 0 3.174 0 10s.172 7.7 10 7.7s10-.874 10-7.7s-.172-7.7-10-7.7m3.205 8.034l-4.49 2.096c-.393.182-.715-.022-.715-.456V8.026c0-.433.322-.638.715-.456l4.49 2.096c.393.184.393.484 0 .668"
+                />
+              </svg>
+            </a>
+            <a href="https://soundcloud.com/exectivid" target="_blank" class="text-base-content/60 hover:text-accent transition-all hover:scale-110">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M7 17.939h.5v-8.457c-.171.026-.337.072-.5.127zm2 0h.5V8.536a4 4 0 0 0-.5.111zm-4 0h.5v-5.856c-.172.102-.338.225-.5.37zm-2 0h.5v-3.411c-.174.24-.341.503-.5.787zm6 0h.5V8.169c-.169-.021-.335-.034-.5-.034zm-8 0h.5v-1.63a6 6 0 0 0-.5.503zm10.5 0h6.25c1.242 0 2.25-1.008 2.25-2.25s-1.008-2.25-2.25-2.25c-.097 0-.191.007-.283.021a3.001 3.001 0 0 0-5.717-1.118v5.597z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <p class="text-[9px] text-base-content/30 italic mt-2">© 2026 Huancayo, Perú</p>
+      </div>
+    </div>
 
   </aside>
 

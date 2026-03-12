@@ -1,22 +1,32 @@
-<div class="min-h-screen bg-base-100 flex flex-col items-center justify-center p-6 md:p-12">
+<div
+  class="min-h-screen flex flex-col items-center justify-center p-6 md:p-12 bg-cover bg-center bg-no-repeat relative"
+  style="background-image: url('img/background.jpg');"
+>
 
-  <div class="max-w-2xl text-center flex flex-col items-center">
+  <div class="absolute inset-0 bg-black/30 backdrop-blur-[2px]"></div>
 
-    <span class="text-xs md:text-sm font-bold uppercase tracking-[0.3em] mb-6 opacity-80">
+  <div class="relative z-10 max-w-2xl text-center flex flex-col items-center">
+
+    <span class="text-xs font-monserratAlternate md:text-sm font-bold uppercase tracking-[0.3em] mb-6 text-white/90">
+
       Música Independiente
     </span>
 
-    <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold text-base-content tracking-tighter mb-6">
+    <a
+      routerLink="/exectivid"
+      class="text-5xl font-monserratAlternate md:text-7xl lg:text-8xl font-extrabold text-white tracking-tighter mb-6 drop-shadow-2xl"
+      style="view-transition-name: exectivid"
+    >
       Exectivid
-    </h1>
+    </a>
 
-    <p class="text-lg md:text-2xl text-base-content/70 leading-relaxed mb-10 font-medium">
-      Un viaje sonoro personal, crudo e íntimo. Descubre las canciones que nacen de la honestidad.
-    </p>
+    <div class="text-lg font-monserratAlternate md:text-2xl text-white/80 leading-relaxed mb-10 font-medium drop-shadow-md">
+      ... La nostalgia no es un ancla al pasado, sino el pulso que nos mantiene vivos. Pietro Benavente nos comparte un viaje personal a través de canciones crudas y honestas; un refugio para su alma y un espejo para la nuestra ...
+    </div>
 
     <a
       routerLink="/exectivid"
-      class="btn btn-ghost btn-wide rounded-full text-lg h-14 shadow-lg hover:scale-105 transition-transform duration-300"
+      class="btn bg-white/20 hover:bg-white/40 border-white/50 text-white btn-wide font-monserratAlternate rounded-full text-lg h-14 backdrop-blur-md shadow-xl hover:scale-105 transition-transform duration-300"
     >
       Escuchar ahora
     </a>

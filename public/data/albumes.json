@@ -62,17 +62,5 @@
     "name": "casi olvidas que eres el sol ;)",
     "image": "./img/8.jpg",
     "slug": "casi-olvidas-que-eres-el-sol"
-  },
-  {
-    "id": 9,
-    "type": "Sencillo",
-    "year": 2026,
-    "name": "Prueba de agregar álbumes",
-    "songs": [
-      "XD",
-      "18293.mp3"
-    ],
-    "image": "./img/9.jpg",
-    "slug": "prueba"
   }
 ]
