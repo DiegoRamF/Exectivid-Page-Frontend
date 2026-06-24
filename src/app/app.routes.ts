@@ -2,16 +2,11 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: 'welcome',
-    loadComponent: () => import('./exectivid-antiguo/components/welcome/welcome'),
-  },
-  {
-    path: 'exectivid',
-    loadComponent: () => import('./exectivid-antiguo/pages/exectivid-page/exectivid-page'),
-    loadChildren: () => import('./exectivid-antiguo/pages/album.routes'),
+    path: 'home',
+    loadComponent: () => import( './exectivid/pages/home/home' ),
   },
   {
     path: '**',
-    redirectTo: 'welcome',
+    redirectTo: 'home',
   }
 ];

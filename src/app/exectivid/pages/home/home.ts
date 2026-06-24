@@ -5,4 +5,4 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './welcome.html',
 })
-export class Welcome {}
+export default class Home {};
