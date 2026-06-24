@@ -3,12 +3,12 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: 'welcome',
-    loadComponent: () => import('./exectivid/components/welcome/welcome'),
+    loadComponent: () => import('./exectivid-antiguo/components/welcome/welcome'),
   },
   {
     path: 'exectivid',
-    loadComponent: () => import('./exectivid/pages/exectivid-page/exectivid-page'),
-    loadChildren: () => import('./exectivid/pages/album.routes'),
+    loadComponent: () => import('./exectivid-antiguo/pages/exectivid-page/exectivid-page'),
+    loadChildren: () => import('./exectivid-antiguo/pages/album.routes'),
   },
   {
     path: '**',

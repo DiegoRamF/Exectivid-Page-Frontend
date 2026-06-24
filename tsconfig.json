@@ -5,9 +5,11 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@services/*": ["./src/app/exectivid/services/*"],
-      "@interfaces/*": ["./src/app/exectivid/interfaces/*"],
       "@components/*": ["./src/app/exectivid/components/*"],
+      "@interfaces/*": ["./src/app/exectivid/interfaces/*"],
+      "@layouts/*": ["./src/app/exectivid/layouts/*"],
+      "@services/*": ["./src/app/exectivid/services/*"],
+      "@pages/*": ["./src/app/exectivid/pages/*"],
     },
 
     "strict": true,

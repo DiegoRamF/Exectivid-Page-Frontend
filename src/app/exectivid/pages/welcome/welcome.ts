@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'welcome',
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './welcome.html',
 })
-export default class Welcome { }
+export class Welcome {}
