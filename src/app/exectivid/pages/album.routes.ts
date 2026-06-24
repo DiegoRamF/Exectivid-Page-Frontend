@@ -8,7 +8,7 @@ export const albumRoute: Routes = [
   {
     path: 'album/:albumSlug/:songSlug',
     loadComponent: () => import('./song-list/lyrics-of-song/lyrics-of-song'),
-  }
-]
+  },
+];
 
 export default albumRoute;

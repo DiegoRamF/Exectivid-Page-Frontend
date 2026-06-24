@@ -5,7 +5,8 @@
     "slug": "febrero",
     "lyrics": [
       "..."
-    ]
+    ],
+    "message": "El pasado nunca desaparece, solo encuentra la forma de aparecerse una vez más. De una vivencia pasa a un susurro distorsionado que, en los momentos de mayor quietud, siempre encontrará la rendija por la cual colarse en este mes de Febrero."
   },
   {
     "id": 2,
@@ -40,7 +41,8 @@
       "Nubes color naranja",
       "Nubes color naranja",
       "Nubes color naranja"
-    ]
+    ],
+    "message": "A pesar de que te fuiste, el amor que siento por ti no desapareció. Se vuelve cartas que ya no se leen, pero que siguen escritas en mi mente, en una compañía silenciosa que, aunque sea un recuerdo, alivia por un momento la soledad de mi camino. Tu amor se fue, pero pintó el cielo en Nubes color naranja."
   },
   {
     "id": 3,
@@ -64,7 +66,8 @@
       " ",
       "Que es lo que me hace tan feliz",
       "Solo se que eso te involucra a ti"
-    ]
+    ],
+    "message": "Antes de la pérdida, antes de la soledad, existió ese momento de gratitud pura, donde tu sola presencia era suficiente para hacerme renacer cada día. Esa felicidad, simple y sin conflicto, es también una memoria que merece ser guardada, Güeparda."
   },
   {
     "id": 4,
@@ -93,7 +96,8 @@
       "Quiero verte feliz",
       "La luz en tus ojos",
       "Brilla siempre aquí"
-    ]
+    ],
+    "message": "Quiero saber si tu luz seguirá brillando para mí, a pesar que todo se ponga gris, que el sol vuelva a ocultarse. Y si la realidad se vuelve insoportable inventemos un planeta donde solo existamos nosotros dos y la primesa de tu felicidad sea la única gravedad que nos sostenga, como si fuera Marte."
   },
   {
     "id": 5,
@@ -121,7 +125,8 @@
       "Siempre estoy pa' ti",
       "Y yo sigo aquí",
       "Puedes confiar en mí"
-    ]
+    ],
+    "message": "No entiendo qué nos está pasando. Siento que te alejas y el frío que emanas me duele, pero eso qué importa. Yo seguiré aquí, mi oferta de paz sigue en pie, mis manos siguen aquí, y aunque tenga que silenciar mi propia mente para esperarte, lo haré. Puedes confiar en mí."
   },
   {
     "id": 6,
@@ -154,7 +159,8 @@
       "Otra vez, otra vez",
       "Otra vez, otra vez",
       "Otra vez, otra vez"
-    ]
+    ],
+    "message": "Siento que ya es tarde para volver, el corazón ya no me funciona, y mis ojos viejos de tanto llorar solo pueden imaginar los tuyos brillando una vez más. Pero esa imagen se aleja cada vez más, distorsionándose por la distancia, hasta perderse en la estática del olvido. Otra vez, otra vez, otra vez... Aunque ya no haya ninguna vez posible y mi rostro se quedará con esos Ojos viejos."
   },
   {
     "id": 7,
@@ -162,7 +168,8 @@
     "slug": "estoy-aqui",
     "lyrics": [
       "..."
-    ]
+    ],
+    "message": "Cuando el dolor se vuelve insoportable, cuando ya no tenga fuerzas para llorar una vez más, me refugiaré en un mundo, un mundo donde todo sigue mis reglas, donde el día y la noche siguen su curso, donde nada se irá, donde no piense en nada más. Pero incluso dentro de ese mundo, la lluvia del mundo real suena afuera de la ventana, recordándome que el 'aquí' no es más que una pausa en esta vida que me obliga a seguir. Pero Estoy aquí."
   },
   {
     "id": 8,
@@ -204,7 +211,8 @@
       "Ahora seas más feliz",
       "Y siento es bueno para ti",
       "Para ti"
-    ]
+    ],
+    "message": "Hoy te vi, vi esa mirada tuya, esa luz que siempre me guió, vi que esa luz ya no era para mí. Duele, duele mucho, pero sé que fui yo el que falló, porque no supe hacerte sentir lo valiosa que eras para mí. Me alegra verte sonreír, y tal vez ahora seas más feliz, y aunque eso no me incluya, es bueno, bueno para ti. Y en medio de estos deseos, estas renuncias, encuentro paz en quererte sin poseerte, encuentro paz en Tu mirar."
   },
   {
     "id": 9,
@@ -240,7 +248,9 @@
       " ",
       "Sácame de aquí",
       "Sácame de aquí"
-    ]
+    ],
+
+    "message": "Ya no puedo saber quién soy ni qué siento. Todo el mundo pasa por mi lado como si ya no existiera o como si mereciera su desprecio. Quiero gritar, una y otra vez, pidiendo a alguien, o algo, que me saque de este lugar, de esta vida, de este yo que ya no es mío. Sácame de aquí, sácame de este Mimo."
   },
   {
     "id": 10,
@@ -286,7 +296,8 @@
       "Podrías estar en paz al fin",
       "Eso es lo que soy",
       "No puedo vivir en mí"
-    ]
+    ],
+    "message": "Perdí la esperanza, ya no creo en mí, ya no me veo en ti, mi propia piel se ha vuelto una prisión inhabitable. Si quizás mi ausencia pudiera darte paz, si desaparecer fuese un regalo, entonces tal vez la única forma de quererte que me queda es la de no estar. Porque sencillamente, No puedo vivir en mí."
   },
   {
     "id": 11,
@@ -310,7 +321,8 @@
       "(Como el Jimmy Neutrón)",
       " ",
       "Hola, me están secuestrando jsjsjs"
-    ]
+    ],
+    "message": "Hubo un tiempo donde mis amigos me llamaban, hubo videos y risas. Siempre escucho ese eco distorsionado por el tiempo; es la prueba que me dice que realmente existí y que quizás algo de eso aún pueda salvarme en este mes de Agosto."
   },
   {
     "id": 12,
@@ -352,7 +364,8 @@
       "Es para ti",
       "Cada parte de mí",
       "Es para ti"
-    ]
+    ],
+    "message": "Te recuerdo. Recuerdo tus ojos, tus pasos, tu cabello bailando con el mar. Recuerdo cuando pensé que el universo nos formó el uno para el otro. Y aunque te fuiste y el camino fue difícil, aunque en algún momento quise dejar de existir, hoy puedo cantarlo de nuevo. No espero que vuelvas, solo quiero recordar que ese amor existió, que fue real, y que cada parte de mí está marcada por ti. Y ahora en mi mente Somos polvo de estrellas."
   },
   {
     "id": 13,
@@ -387,7 +400,8 @@
       "Sigue en mí",
       "Los recuerdos vivirán",
       "Seguirán en mí"
-    ]
+    ],
+    "message": "El tiempo pasa muy deprisa cuando te apareces en mi cabeza, y el viento intenta llevarse los recuerdos, pero no puede. Porque tengo tu risa desordenando cosas, porque tengo tus canciones y tus pasos sin palabras. Ya no duele como antes, ahora solo eres un arrullo. Ahora guardo tus recuerdos en este Medallón palmera."
   },
   {
     "id": 14,
@@ -419,7 +433,8 @@
       "El camino sin final",
       "Vivir ya no es un sueño, eso es lo que creo yo",
       "El camino sin final"
-    ]
+    ],
+    "message": "He esperado tanto la luz y he entendido que el camino es difícil y la oscuridad sigue siendo amarga, donde la soledad sigue siendo una constante. Pero ya no me sorprende, ya no me destruye. He aprendido que vivir no es un sueño, es esta realidad áspera y hermosa a la vez. Y cuando me vaya, lo único que me importará es que pueda seguir, sin detenerme, hasta el final. He entendido que la vida es un Camino sin final."
   },
   {
     "id": 15,
@@ -427,7 +442,8 @@
     "slug": "burbuja",
     "lyrics": [
       "..."
-    ]
+    ],
+    "message": "Logré construir un lugar donde puedo estar conmigo mismo. Aquí cabe la esperanza y también la tristeza. Afuera, la estática del mundo sigue sonando, pero ya no me invade, solo susurra. Mientras esta fortaleza dure, es suficiente, esto es paz aunque esta fortaleza sea frágil, transparente, flotante, como una Burbuja."
   },
   {
     "id": 16,
@@ -479,6 +495,7 @@
       "Será que me llamas?",
       "Pero ya es muy tarde",
       "..."
-    ]
+    ],
+    "message": "Ya no necesito que me salves. Toma mi mano, ahora puedo ofrecerte lo que aprendí en el camino. Pienso en ti, me pregunto cómo estás, quisiera poder abrazarte. Pero sobre todo, quiero que sepas que estarás bien. Y aunque no estemos juntos, aunque el tiempo pase, siempre habrá un lugar aquí para ti, siempre habrá un lugar para ti en mis Memorias."
   }
 ]

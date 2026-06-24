@@ -3,4 +3,5 @@ export interface Song {
   name:   string;
   slug:   string;
   lyrics: string[];
-}
+  message: string;
+};

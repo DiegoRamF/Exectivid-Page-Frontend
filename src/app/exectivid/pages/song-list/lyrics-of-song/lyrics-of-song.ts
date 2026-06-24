@@ -1,6 +1,6 @@
 import { Component, computed, inject } from '@angular/core';
 import { rxResource, toSignal } from '@angular/core/rxjs-interop';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Song } from '@interfaces/song-interfaces';
 import { AlbumesService } from '@services/album.service';
 import { SongsService } from '@services/songs.service';
@@ -8,7 +8,7 @@ import { map, of, tap } from 'rxjs';
 
 @Component({
   selector: 'lyrics-of-song',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './lyrics-of-song.html',
 })
 export default class LyricsOfSong {
@@ -61,5 +61,6 @@ export default class LyricsOfSong {
   })
 
 
-  songInfo = computed(() => this.songResource.value())
+  songInfo = computed(() => this.songResource.value());
+  albumInfo = computed(() => this.albumResource.value());
 };
