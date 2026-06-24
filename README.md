@@ -26,4 +26,20 @@ Escogí este proyecto debido a que Pietro Benavente es alguien a quien admiro y 
 **Artista original:** Exectivid (Pietro Benavente)
  - Instagram de Exectivid **https://www.instagram.com/exectivid/**
 
-Hecho con pasión por un fan para la comunidad de Exectivid.
+## Visita la página en
+* **[Exectivid Page](https://exectivid-page.vercel.app/welcome)**
+
+## Instalación y Configuración
+1. Clonar el repositorio
+```
+git clone https://github.com/DiegoRamF/Exectivid-Page-Frontend.git
+```
+2. Instalar dependencias
+```
+npm install
+```
+3. Lanzar el servidor de desarrollo
+```
+ng serve
+```
+4. Abre el navegador en http://localhost:4200
