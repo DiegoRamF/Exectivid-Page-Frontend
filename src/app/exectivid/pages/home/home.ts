@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'welcome',
+  selector: 'home',
   imports: [],
-  templateUrl: './welcome.html',
+  templateUrl: './home.html',
 })
 export default class Home {};
