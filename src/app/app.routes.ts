@@ -6,6 +6,20 @@ export const routes: Routes = [
     loadComponent: () => import( './exectivid/pages/home/home' ),
   },
   {
+    path: '',
+    loadComponent: () => import( './exectivid/layouts/main/main' ),
+    children: [
+      {
+        path: 'info',
+        loadComponent: () => import( './exectivid/pages/info/info' ),
+      },
+      {
+        path: 'song-list',
+        loadComponent: () => import( './exectivid/pages/song-list/song-list' ),
+      },
+    ],
+  },
+  {
     path: '**',
     redirectTo: 'home',
   }
