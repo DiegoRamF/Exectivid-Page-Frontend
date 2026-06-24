@@ -22,26 +22,34 @@
   ></div>
 }
 
-<!-- @if (isSidebarOpen()) {
-  <div (click)="toggleSidebar()" class="fixed inset-0 z-40 bg-black/50 md:hidden"></div>
-} -->
+<aside
+  class="fixed inset-y-0 left-0 z-50 flex flex-col w-64 h-full bg-[rgb(228,216,180)] text-white
+    transform transition-transform duration-300 ease-in-out md:relative md:translate-x-0"
+  [class.translate-x-0]="isSidebarOpen()"
+  [class.-translate-x-full]="!isSidebarOpen()"
+>
 
-<!-- <aside class="fixed inset-y-0 left-0 z-50 flex flex-col w-64 h-full bg-blue-800 text-white transform transition-transform duration-300 ease-in-out md:relative md:translate-x-0"
-       [class.translate-x-0]="isSidebarOpen()"
-       [class.-translate-x-full]="!isSidebarOpen()">
-
-  <div class="flex items-center justify-between p-4 bg-blue-900">
-    <span class="text-xl font-bold md:block">Navegación</span>
-    <button (click)="toggleSidebar()" class="md:hidden p-1 text-gray-300 hover:text-white">
+  <div class="flex items-center justify-between p-4 bg-[rgb(182,168,127)]">
+    <span class="text-xl font-bold font-montserrat md:block">Álbumes</span>
+    <button
+      (click)="toggleSidebar()"
+      class="md:hidden p-1 text-gray-300 hover:text-white"
+    >
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"
+        ></path>
       </svg>
     </button>
   </div>
 
   <nav class="flex-1 p-4 space-y-2">
-    <a href="#" class="block px-4 py-2 rounded hover:bg-blue-700">Inicio</a>
-    <a href="#" class="block px-4 py-2 rounded hover:bg-blue-700">Perfil</a>
-    <a href="#" class="block px-4 py-2 rounded hover:bg-blue-700">Ajustes</a>
+    <p class="block px-4 py-2 rounded hover:bg-blue-700">HOLA</p>
+    <p class="block px-4 py-2 rounded hover:bg-blue-700">HOLA</p>
+    <p class="block px-4 py-2 rounded hover:bg-blue-700">HOLA</p>
   </nav>
-</aside> -->
+
+</aside>
