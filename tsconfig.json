@@ -3,15 +3,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "rootDir": "./",
     "paths": {
       "@components/*": ["./src/app/exectivid/components/*"],
       "@interfaces/*": ["./src/app/exectivid/interfaces/*"],
       "@layouts/*": ["./src/app/exectivid/layouts/*"],
       "@services/*": ["./src/app/exectivid/services/*"],
-      "@pages/*": ["./src/app/exectivid/pages/*"],
+      "@pages/*": ["./src/app/exectivid/pages/*"]
     },
-
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
