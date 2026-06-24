@@ -27,7 +27,7 @@ Escogí este proyecto debido a que Pietro Benavente es alguien a quien admiro y 
  - Instagram de Exectivid **https://www.instagram.com/exectivid/**
 
 ## Visita la página en
-* **[Exectivid Page](https://exectivid-page.vercel.app/welcome)**
+* **[Exectivid Page]()**
 
 ## Instalación y Configuración
 1. Clonar el repositorio

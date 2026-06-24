@@ -6,7 +6,7 @@ export const routes: Routes = [
     loadComponent: () => import( './exectivid/pages/home/home' ),
   },
   {
-    path: '',
+    path: 'exectivid',
     loadComponent: () => import( './exectivid/layouts/main/main' ),
     children: [
       {
