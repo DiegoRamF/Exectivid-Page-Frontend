@@ -1,11 +1,19 @@
-import { Component, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
+import { rxResource } from '@angular/core/rxjs-interop'
+import { RouterLink } from '@angular/router';
+
+import { AlbumesService } from '@services/albumes.service';
+import { tap } from 'rxjs';
+
 
 @Component({
   selector: 'side-bar',
-  imports: [],
+  imports: [ RouterLink ],
   templateUrl: './side-bar.html',
 })
 export class SideBar {
+
+  private albumesService = inject( AlbumesService );
 
   //* Funcionalidad solo en teléfonos:
 
@@ -18,5 +26,16 @@ export class SideBar {
   toggleSidebar() {
     this.isSidebarOpen.update(estado => !estado);
   };
+
+
+
+  albumesResource = rxResource({
+    stream: () => this.albumesService.getAlbumes()
+      .pipe(
+        tap( console.log ),
+      ),
+  });
+
+  albumes = computed( () => this.albumesResource.value() )
 
 };

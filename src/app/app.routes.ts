@@ -14,8 +14,12 @@ export const routes: Routes = [
         loadComponent: () => import( './exectivid/pages/info/info' ),
       },
       {
-        path: 'song-list',
+        path: 'album/:albumSlug',
         loadComponent: () => import( './exectivid/pages/song-list/song-list' ),
+      },
+      {
+        path: 'album/:albumSlug/:songSlug',
+        loadComponent: () => import( './exectivid/pages/lyrics/lyrics' ),
       },
     ],
   },
