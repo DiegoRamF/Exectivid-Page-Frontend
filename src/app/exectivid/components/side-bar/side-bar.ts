@@ -32,7 +32,8 @@ export class SideBar {
   albumesResource = rxResource({
     stream: () => this.albumesService.getAlbumes()
       .pipe(
-        tap( console.log ),
+        //* Muestra en la consola cuando se hace click a uno de los álbumes
+        // tap( console.log ),
       ),
   });
 

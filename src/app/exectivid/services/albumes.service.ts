@@ -22,7 +22,8 @@ export class AlbumesService {
     return this.http.get<Album[]>( 'data/albunes.json' )
       .pipe(
         map( albumes => albumes.find( album => album.slug === slug )),
-        tap( console.log ),
+        //* Esto muestra en la consola todos los álbumes en la consola cada vez que se ingresa a /exectivid/info o cualquier ruta dentro de /exectivid
+        // tap( console.log ),
       );
   };
 
