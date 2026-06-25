@@ -1,6 +1,6 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { rxResource } from '@angular/core/rxjs-interop'
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 import { AlbumesService } from '@services/albumes.service';
 import { tap } from 'rxjs';
@@ -8,7 +8,7 @@ import { tap } from 'rxjs';
 
 @Component({
   selector: 'side-bar',
-  imports: [ RouterLink ],
+  imports: [ RouterLink, RouterLinkActive ],
   templateUrl: './side-bar.html',
 })
 export class SideBar {

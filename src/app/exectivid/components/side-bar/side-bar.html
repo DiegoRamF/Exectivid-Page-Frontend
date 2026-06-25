@@ -29,8 +29,8 @@
   [class.-translate-x-full]="!isSidebarOpen()"
 >
 
-  <div class="flex items-center justify-between p-4 bg-[rgb(182,168,127)]">
-    <span class="text-xl font-bold font-montserrat md:block">Álbumes</span>
+  <div class="flex items-center justify-between p-4">
+    <span class="text-[rgb(121,50,5)] text-4xl font-montserrat font-bold md:block">Exectivid</span>
     <button
       (click)="toggleSidebar()"
       class="md:hidden p-1 text-gray-300 hover:text-white"
@@ -48,13 +48,19 @@
 
   <nav class="flex-1 p-4 space-y-1 font-montserrat">
 
-    @for (album of albumes(); track album.id) {
-      <a [routerLink]=""></a>
-    }
+    <span class="text-[10px] font-bold tracking-widest text-[rgb(164,116,75)]">ÁLBUMES</span>
 
-    <p class="block px-4 py-2 rounded hover:bg-blue-700">HOLA</p>
-    <p class="block px-4 py-2 rounded hover:bg-blue-700">HOLA</p>
-    <p class="block px-4 py-2 rounded hover:bg-blue-700">HOLA</p>
+    @for (album of albumes(); track album.id) {
+      <a
+        [routerLink]="['album', album.slug]"
+        routerLinkActive="border-r-3 border-b-3 bg-[rgba(189,175,133,0.62)]"
+        class="flex items-center px-4 py-3 rounded-lg border-[rgb(121,50,5)]
+          transition duration-200 text-sm group
+          hover:bg-[rgba(189,175,133,0.62)]"
+      >
+        <span class="truncate text-[rgb(121,50,5)] text-md font-bold">{{ album.id }} - {{ album.name }}</span>
+      </a>
+    }
   </nav>
 
 </aside>
