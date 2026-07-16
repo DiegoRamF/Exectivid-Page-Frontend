@@ -19,9 +19,9 @@ export default class SongList {
 
   albumSlug = toSignal<string>(
     this.route.params
-    .pipe(
-      map( params => params[ 'albumSlug' ] )
-    ),
+      .pipe(
+        map( params => params[ 'albumSlug' ] ),
+      ),
   );
 
   albumId = computed<number | undefined>( () => {
