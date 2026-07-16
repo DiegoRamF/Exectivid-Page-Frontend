@@ -1,6 +1,6 @@
 import { Component, computed, inject } from '@angular/core';
 import { rxResource, toSignal } from '@angular/core/rxjs-interop';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { map, of } from 'rxjs';
 
 import { AlbumesService } from '../../services/albumes.service';
@@ -8,7 +8,7 @@ import { SongsService } from '../../services/songs.service';
 
 @Component({
   selector: 'song-list',
-  imports: [],
+  imports: [ RouterLink ],
   templateUrl: './song-list.html',
 })
 export default class SongList {
@@ -45,5 +45,6 @@ export default class SongList {
 
   albumInfo = computed( () => this.albumResource.value() );
   songInfo = computed( () => this.songResource.value() );
+  isLoading = computed( () => this.songResource.isLoading() );
 
 };

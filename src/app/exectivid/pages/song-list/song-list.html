@@ -1,0 +1,79 @@
+<div class="max-w-5xl mx-auto py-6 font-montserrat">
+
+  <div class="flex flex-col md:flex-row items-center md:items-end gap-8 mb-8 border-b border-[rgb(164,116,75)]/30 pb-8">
+
+    <div class="shrink-0 relative group">
+      @if (albumInfo()?.image) {
+        <img
+          [src]="albumInfo()?.image"
+          [alt]="'Portada del álbum ' + albumInfo()?.name"
+          class="w-52 h-52 md:w-64 md:h-64 object-cover rounded-2xl shadow-xl border-2 border-[rgb(121,50,5)]/20 bg-[rgb(228,216,180)] transition-transform duration-300 group-hover:scale-[1.02]"
+          style="view-transition-name: cover"
+        />
+      } @else {
+        <div class="w-52 h-52 md:w-64 md:h-64 rounded-2xl bg-[rgba(189,175,133,0.4)] border-2 border-[rgb(164,116,75)]/30 flex items-center justify-center">
+          <span class="text-[rgb(164,116,75)] text-sm font-bold animate-pulse">Cargando portada...</span>
+        </div>
+      }
+    </div>
+
+    <div class="text-center md:text-left flex-1">
+
+      <div class="inline-block px-3 py-1 rounded-full bg-[rgba(189,175,133,0.4)] border border-[rgb(164,116,75)]/40 mb-3">
+        <p class="text-xs font-bold uppercase tracking-widest text-[rgb(121,50,5)]">
+          {{ albumInfo()?.type || 'Álbum' }} • {{ albumInfo()?.year || '...' }}
+        </p>
+      </div>
+
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-black text-[rgb(121,50,5)] tracking-tight mb-3 leading-tight">
+        {{ albumInfo()?.name || 'Cargando álbum...' }}
+      </h1>
+
+      <h2 class="text-sm md:text-base font-bold uppercase tracking-widest text-[rgb(164,116,75)]">
+        Lista de canciones
+      </h2>
+
+    </div>
+
+  </div>
+
+  <div class="space-y-3">
+    @if (isLoading()) {
+      @for (i of [1, 2, 3, 4]; track i) {
+        <div class="h-16 w-full rounded-xl bg-[rgba(189,175,133,0.3)] animate-pulse border border-[rgb(164,116,75)]/20"></div>
+      }
+    } @else if (songInfo() && songInfo()!.length > 0) {
+      <ul class="flex flex-col gap-3">
+        @for (song of songInfo(); track song.id; let idx = $index) {
+          <li class="group">
+            <a
+              [routerLink]="['/exectivid', 'album', albumSlug(), song.slug]"
+              class="flex items-center justify-between p-4 bg-[rgb(228,216,180)] hover:bg-[rgba(189,175,133,0.62)] border border-[rgb(164,116,75)]/30 hover:border-[rgb(121,50,5)] rounded-xl shadow-sm hover:shadow-md transition-all duration-200 w-full"
+            >
+              <div class="flex items-center gap-4">
+                <span class="text-sm font-black text-[rgb(164,116,75)] group-hover:text-[rgb(121,50,5)] transition-colors w-6 text-right">
+                  {{ idx + 1 }}
+                </span>
+                <span class="text-lg font-bold text-[rgb(121,50,5)] tracking-wide">
+                  {{ song.name }}
+                </span>
+              </div>
+
+              <div class="text-[rgb(164,116,75)] group-hover:text-[rgb(121,50,5)] group-hover:translate-x-1 transition-all duration-200">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </div>
+            </a>
+          </li>
+        }
+      </ul>
+    } @else {
+      <div class="text-center py-12 px-4 rounded-2xl bg-[rgba(189,175,133,0.2)] border border-[rgb(164,116,75)]/30">
+        <p class="text-[rgb(121,50,5)] font-bold text-lg mb-1">Aún no hay canciones en este álbum</p>
+        <p class="text-sm text-[rgb(164,116,75)]">Estamos trabajando en subir las letras y mensajes de este lanzamiento.</p>
+      </div>
+    }
+  </div>
+
+</div>
