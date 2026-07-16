@@ -1,5 +1,5 @@
 import { Component, computed, inject } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { rxResource, toSignal } from '@angular/core/rxjs-interop';
 import { map, of } from 'rxjs';
 
@@ -8,7 +8,7 @@ import { AlbumesService } from '../../services/albumes.service';
 
 @Component({
   selector: 'lyrics',
-  imports: [],
+  imports: [ RouterLink ],
   templateUrl: './lyrics.html',
 })
 export default class Lyrics {
