@@ -19,7 +19,7 @@
 }
 
 <aside
-  class="fixed inset-y-0 left-0 z-50 flex flex-col w-64 h-full bg-[rgb(228,216,180)] text-white
+  class="fixed inset-y-0 left-0 z-50 flex flex-col w-96 h-full bg-[rgb(228,216,180)] text-white
     transform transition-transform duration-300 ease-in-out md:relative md:translate-x-0"
   [class.translate-x-0]="isSidebarOpen()"
   [class.-translate-x-full]="!isSidebarOpen()"
@@ -61,7 +61,7 @@
       <span class="truncate text-[rgb(121,50,5)] text-md font-bold">Inicio</span>
     </a>
 
-    <span class="text-[10px] font-bold tracking-widest text-[rgb(164,116,75)]">ÁLBUMES</span>
+    <span class="text-[10px] font-bold tracking-widest text-[rgb(164,116,75)] p-6 border-t border-[rgb(164,116,75)]/30">ÁLBUMES</span>
 
     @for (album of albumes(); track album.id) {
       <a
