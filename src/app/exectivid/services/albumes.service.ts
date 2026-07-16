@@ -19,7 +19,7 @@ export class AlbumesService {
   };
 
   getAlbumBySlug( slug: string | undefined ): Observable<Album | undefined> {
-    return this.http.get<Album[]>( 'data/albunes.json' )
+    return this.getAlbumes()
       .pipe(
         map( albumes => albumes.find( album => album.slug === slug )),
         //* Esto muestra en la consola todos los álbumes en la consola cada vez que se ingresa a /exectivid/info o cualquier ruta dentro de /exectivid
